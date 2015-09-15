@@ -1,0 +1,10 @@
+[Inputs]
+rst
+clk50
+[Outputs]
+jobb_fej_allapot
+bal_fej_allapot
+=jobb_allapot[2:0]=
+=bal_allapot[2:0]=
+=cd[1:0]=
+[BiDir]

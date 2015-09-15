@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\VHDLprojects\tobbmodulos\kisZH1_2013_osz\dirII_hazi.ncd
+OUTFILE=C:\VHDLprojects\tobbmodulos\kisZH1_2013_osz\dirII_hazi.bit
+FAMILY=Spartan3E
+PART=xc3s100e-4cp132
+WORKINGDIR=C:\VHDLprojects\tobbmodulos\kisZH1_2013_osz
+LICENSE=WebPack
+USER_INFO=210801692_0_0_278

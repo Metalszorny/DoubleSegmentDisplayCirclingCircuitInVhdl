@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "C:/VHDLprojects/tobbmodulos/kisZH1_2013_osz/dirII_hazi.xst" -ofn "C:/VHDLprojects/tobbmodulos/kisZH1_2013_osz/dirII_hazi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc labak.ucf -p xc3s100e-cp132-4 dirII_hazi.ngc dirII_hazi.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o dirII_hazi_map.ncd dirII_hazi.ngd dirII_hazi.pcf 
+par -w -intstyle ise -ol high -t 1 dirII_hazi_map.ncd dirII_hazi.ncd dirII_hazi.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml dirII_hazi.twx dirII_hazi.ncd -o dirII_hazi.twr dirII_hazi.pcf -ucf labak.ucf 
+bitgen -intstyle ise -f dirII_hazi.ut dirII_hazi.ncd 
+bitgen -intstyle ise -f dirII_hazi.ut dirII_hazi.ncd 

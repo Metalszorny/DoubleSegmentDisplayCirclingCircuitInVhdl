@@ -1,0 +1,5 @@
+set -tmpdir "C:/VHDLprojects/tobbmodulos/kisZH1_2013_osz/xst/projnav.tmp"
+set -xsthdpdir "C:/VHDLprojects/tobbmodulos/kisZH1_2013_osz/xst"
+elaborate
+-ifn main.prj
+-ifmt mixed

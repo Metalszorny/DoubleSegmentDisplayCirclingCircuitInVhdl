@@ -1,0 +1,2 @@
+vhdtdtfi -lib work dekad_kij.vhd -prj kisZH1_2013_osz -o dekad_kij.spl -module dekad_kij -template C:/Xilinx/13.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e dekad_kij.spl C:/VHDLprojects/tobbmodulos/kisZH1_2013_osz/dekad_kij.sym 

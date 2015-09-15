@@ -1,0 +1,10 @@
+[Inputs]
+bal_fej_allapot
+jobb_fej_allapot
+=cd[1:0]=
+=bal_allapot[2:0]=
+=jobb_allapot[2:0]=
+[Outputs]
+=digit[3:0]=
+=seg[6:0]=
+[BiDir]

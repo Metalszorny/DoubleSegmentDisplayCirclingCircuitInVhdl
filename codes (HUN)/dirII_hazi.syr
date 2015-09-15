@@ -1,0 +1,427 @@
+Release 13.2 - xst O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: dirII_hazi.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "dirII_hazi.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "dirII_hazi"
+Output Format                      : NGC
+Target Device                      : xc3s100e-4-cp132
+
+---- Source Options
+Top Module Name                    : dirII_hazi
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/VHDLprojects/tobbmodulos/kisZH1_2013_osz/dekad_kij.vhd" in Library work.
+Architecture behavioral of Entity dekad_kij is up to date.
+Compiling vhdl file "C:/VHDLprojects/tobbmodulos/kisZH1_2013_osz/main.vhd" in Library work.
+Architecture behavioral of Entity main is up to date.
+Compiling vhdl file "C:/VHDLprojects/tobbmodulos/kisZH1_2013_osz/dirII_hazi.vhf" in Library work.
+Entity <dirII_hazi> compiled.
+Entity <dirII_hazi> (Architecture <BEHAVIORAL>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <dirII_hazi> in library <work> (architecture <BEHAVIORAL>).
+
+Analyzing hierarchy for entity <dekad_kij> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <main> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <dirII_hazi> in library <work> (Architecture <BEHAVIORAL>).
+Entity <dirII_hazi> analyzed. Unit <dirII_hazi> generated.
+
+Analyzing Entity <dekad_kij> in library <work> (Architecture <behavioral>).
+Entity <dekad_kij> analyzed. Unit <dekad_kij> generated.
+
+Analyzing Entity <main> in library <work> (Architecture <behavioral>).
+Entity <main> analyzed. Unit <main> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <dekad_kij>.
+    Related source file is "C:/VHDLprojects/tobbmodulos/kisZH1_2013_osz/dekad_kij.vhd".
+    Found 1-of-4 decoder for signal <digit>.
+    Summary:
+	inferred   1 Decoder(s).
+Unit <dekad_kij> synthesized.
+
+
+Synthesizing Unit <main>.
+    Related source file is "C:/VHDLprojects/tobbmodulos/kisZH1_2013_osz/main.vhd".
+    Found 3-bit up counter for signal <bal>.
+    Found 1-bit register for signal <bal_fej>.
+    Found 32-bit up counter for signal <bal_fej_frissit>.
+    Found 32-bit up counter for signal <bal_frissit>.
+    Found 2-bit up counter for signal <c_d>.
+    Found 32-bit up counter for signal <frissit_rst>.
+    Found 32-bit up counter for signal <frissit_szlo>.
+    Found 3-bit up counter for signal <jobb>.
+    Found 1-bit register for signal <jobb_fej>.
+    Found 32-bit up counter for signal <jobb_fej_frissit>.
+    Found 32-bit up counter for signal <jobb_frissit>.
+    Summary:
+	inferred   9 Counter(s).
+	inferred   2 D-type flip-flop(s).
+Unit <main> synthesized.
+
+
+Synthesizing Unit <dirII_hazi>.
+    Related source file is "C:/VHDLprojects/tobbmodulos/kisZH1_2013_osz/dirII_hazi.vhf".
+Unit <dirII_hazi> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 9
+ 2-bit up counter                                      : 1
+ 3-bit up counter                                      : 2
+ 32-bit up counter                                     : 6
+# Registers                                            : 2
+ 1-bit register                                        : 2
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 9
+ 2-bit up counter                                      : 1
+ 3-bit up counter                                      : 2
+ 32-bit up counter                                     : 6
+# Registers                                            : 2
+ Flip-Flops                                            : 2
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <dirII_hazi> ...
+
+Optimizing unit <main> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block dirII_hazi, actual ratio is 25.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 202
+ Flip-Flops                                            : 202
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : dirII_hazi.ngr
+Top Level Output File Name         : dirII_hazi
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 13
+
+Cell Usage :
+# BELS                             : 877
+#      GND                         : 1
+#      INV                         : 11
+#      LUT1                        : 186
+#      LUT2                        : 171
+#      LUT3                        : 18
+#      LUT4                        : 58
+#      MUXCY                       : 234
+#      MUXF5                       : 5
+#      VCC                         : 1
+#      XORCY                       : 192
+# FlipFlops/Latches                : 202
+#      FDC                         : 160
+#      FDCE                        : 6
+#      FDE                         : 2
+#      FDPE                        : 2
+#      FDR                         : 32
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 12
+#      IBUF                        : 1
+#      OBUF                        : 11
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-4 
+
+ Number of Slices:                      234  out of    960    24%  
+ Number of Slice Flip Flops:            202  out of   1920    10%  
+ Number of 4 input LUTs:                444  out of   1920    23%  
+ Number of IOs:                          13
+ Number of bonded IOBs:                  13  out of     83    15%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk50                              | BUFGP                  | 202   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+rst                                | IBUF                   | 168   |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 6.597ns (Maximum Frequency: 151.579MHz)
+   Minimum input arrival time before clock: 5.576ns
+   Maximum output required time after clock: 8.723ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk50'
+  Clock period: 6.597ns (frequency: 151.579MHz)
+  Total number of paths / destination ports: 9713 / 244
+-------------------------------------------------------------------------
+Delay:               6.597ns (Levels of Logic = 10)
+  Source:            XLXI_2/frissit_rst_8 (FF)
+  Destination:       XLXI_2/frissit_rst_31 (FF)
+  Source Clock:      clk50 rising
+  Destination Clock: clk50 rising
+
+  Data Path: XLXI_2/frissit_rst_8 to XLXI_2/frissit_rst_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.622  XLXI_2/frissit_rst_8 (XLXI_2/frissit_rst_8)
+     LUT4:I0->O            1   0.704   0.000  XLXI_2/frissit_rst_cmp_eq0000_wg_lut<0> (XLXI_2/frissit_rst_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  XLXI_2/frissit_rst_cmp_eq0000_wg_cy<0> (XLXI_2/frissit_rst_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/frissit_rst_cmp_eq0000_wg_cy<1> (XLXI_2/frissit_rst_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/frissit_rst_cmp_eq0000_wg_cy<2> (XLXI_2/frissit_rst_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/frissit_rst_cmp_eq0000_wg_cy<3> (XLXI_2/frissit_rst_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/frissit_rst_cmp_eq0000_wg_cy<4> (XLXI_2/frissit_rst_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/frissit_rst_cmp_eq0000_wg_cy<5> (XLXI_2/frissit_rst_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_2/frissit_rst_cmp_eq0000_wg_cy<6> (XLXI_2/frissit_rst_cmp_eq0000_wg_cy<6>)
+     MUXCY:CI->O           2   0.459   0.526  XLXI_2/frissit_rst_cmp_eq0000_wg_cy<7> (XLXI_2/frissit_rst_cmp_eq0000)
+     LUT2:I1->O           32   0.704   1.262  XLXI_2/frissit_rst_or00001 (XLXI_2/frissit_rst_or0000)
+     FDR:R                     0.911          XLXI_2/frissit_rst_0
+    ----------------------------------------
+    Total                      6.597ns (4.187ns logic, 2.410ns route)
+                                       (63.5% logic, 36.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk50'
+  Total number of paths / destination ports: 34 / 34
+-------------------------------------------------------------------------
+Offset:              5.576ns (Levels of Logic = 2)
+  Source:            rst (PAD)
+  Destination:       XLXI_2/frissit_rst_31 (FF)
+  Destination Clock: clk50 rising
+
+  Data Path: rst to XLXI_2/frissit_rst_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           170   1.218   1.481  rst_IBUF (rst_IBUF)
+     LUT2:I0->O           32   0.704   1.262  XLXI_2/frissit_rst_or00001 (XLXI_2/frissit_rst_or0000)
+     FDR:R                     0.911          XLXI_2/frissit_rst_0
+    ----------------------------------------
+    Total                      5.576ns (2.833ns logic, 2.743ns route)
+                                       (50.8% logic, 49.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk50'
+  Total number of paths / destination ports: 101 / 10
+-------------------------------------------------------------------------
+Offset:              8.723ns (Levels of Logic = 5)
+  Source:            XLXI_2/jobb_0 (FF)
+  Destination:       seg<3> (PAD)
+  Source Clock:      clk50 rising
+
+  Data Path: XLXI_2/jobb_0 to seg<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            10   0.591   1.057  XLXI_2/jobb_0 (XLXI_2/jobb_0)
+     LUT2:I0->O            2   0.704   0.526  seg<0>31 (seg<0>_bdd1)
+     LUT4:I1->O            1   0.704   0.424  seg<3>43 (seg<3>43)
+     LUT4:I3->O            1   0.704   0.000  seg<3>69_F (N22)
+     MUXF5:I0->O           1   0.321   0.420  seg<3>69 (seg_3_OBUF)
+     OBUF:I->O                 3.272          seg_3_OBUF (seg<3>)
+    ----------------------------------------
+    Total                      8.723ns (6.296ns logic, 2.427ns route)
+                                       (72.2% logic, 27.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.55 secs
+ 
+--> 
+
+Total memory usage is 150788 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,2 @@
+vhdtdtfi -lib work main.vhd -prj kisZH1_2013_osz -o main.spl -module main -template C:/Xilinx/13.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e main.spl C:/VHDLprojects/tobbmodulos/kisZH1_2013_osz/main.sym 

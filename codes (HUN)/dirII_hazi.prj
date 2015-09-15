@@ -1,0 +1,3 @@
+vhdl work "main.vhd"
+vhdl work "dekad_kij.vhd"
+vhdl work "dirII_hazi.vhf"

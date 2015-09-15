@@ -1,0 +1,23 @@
+V3 12
+FL C:/VHDLprojects/tobbmodulos/kisZH1_2013_osz/dekad_kij.vhd 2013/11/17.10:14:58 O.61xd
+EN work/dekad_kij 1384700921 \
+      FL C:/VHDLprojects/tobbmodulos/kisZH1_2013_osz/dekad_kij.vhd \
+      PB ieee/std_logic_1164 1308643377 PB ieee/std_logic_arith 1308643378 \
+      PB ieee/STD_LOGIC_UNSIGNED 1308643379
+AR work/dekad_kij/Behavioral 1384700922 \
+      FL C:/VHDLprojects/tobbmodulos/kisZH1_2013_osz/dekad_kij.vhd \
+      EN work/dekad_kij 1384700921
+FL C:/VHDLprojects/tobbmodulos/kisZH1_2013_osz/dirII_hazi.vhf 2013/11/17.16:08:39 O.61xd
+EN work/dirII_hazi 1384700925 \
+      FL C:/VHDLprojects/tobbmodulos/kisZH1_2013_osz/dirII_hazi.vhf \
+      PB ieee/std_logic_1164 1308643377 PB ieee/NUMERIC_STD 1308643378 LB UNISIM \
+      PH unisim/VCOMPONENTS 1308643377
+AR work/dirII_hazi/BEHAVIORAL 1384700926 \
+      FL C:/VHDLprojects/tobbmodulos/kisZH1_2013_osz/dirII_hazi.vhf \
+      EN work/dirII_hazi 1384700925 CP dekad_kij CP main
+FL C:/VHDLprojects/tobbmodulos/kisZH1_2013_osz/main.vhd 2013/11/17.15:54:33 O.61xd
+EN work/main 1384700923 FL C:/VHDLprojects/tobbmodulos/kisZH1_2013_osz/main.vhd \
+      PB ieee/std_logic_1164 1308643377 PB ieee/std_logic_arith 1308643378 \
+      PB ieee/STD_LOGIC_UNSIGNED 1308643379
+AR work/main/Behavioral 1384700924 \
+      FL C:/VHDLprojects/tobbmodulos/kisZH1_2013_osz/main.vhd EN work/main 1384700923
