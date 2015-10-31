@@ -16,6 +16,11 @@ The task:
 	4. Use asynchronous reset (BTN3) and 50 MHz clock signal.
 
 
+Used languages:
+---------------
+- VHDL
+
+
 Features:
 ---------
 - Concurent and Sequential Processes
