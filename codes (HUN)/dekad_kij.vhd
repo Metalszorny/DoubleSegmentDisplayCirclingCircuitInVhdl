@@ -5,7 +5,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity dekad_kij is
 
-	-- Port declaration
+	-- Port declaration.
     Port ( 
 		   digit : out  STD_LOGIC_VECTOR (3 downto 0);
            seg : out  STD_LOGIC_VECTOR (6 downto 0);
@@ -21,13 +21,13 @@ end dekad_kij;
 architecture Behavioral of dekad_kij is
 begin
 
--- The four 7 digit display state change
+-- The four 7 digit display state change.
 digit <= "1110" when cd = "00" else
          "1101" when cd = "01" else
          "1011" when cd = "10" else
          "0111" when cd = "11";
 
--- The states of the 7 segment displays
+-- The states of the 7 segment displays.
 seg <= "1101110" when (bal_allapot = "000" and cd = "11" and bal_fej_allapot = '1') or (jobb_allapot = "011" and cd = "01" and jobb_fej_allapot = '1') else
        "1010111" when (bal_allapot = "001" and cd = "11" and bal_fej_allapot = '1') or (jobb_allapot = "010" and cd = "01" and jobb_fej_allapot = '1') else
        "1110101" when (bal_allapot = "100" and cd = "10" and bal_fej_allapot = '1') or (jobb_allapot = "111" and cd = "00" and jobb_fej_allapot = '1') else
