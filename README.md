@@ -1,4 +1,4 @@
-# kisZH1_2013_osz
+# DoubleSegmentDisplayCirclingCircuitInVhdl
 
 
 About:
